@@ -1,0 +1,49 @@
+*************************************************************
+FileName = ActuatedFin_v1.GBR
+AutoAperture = True
+*************************************************************
+Generating : Top Layer
+      File : ActuatedFin_v1_Copper_Signal_Top.gbr
+
+    Adding Layer      : Top Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D10
+    D11
+    D12
+    D13
+    D14
+    D15
+    D16
+*************************************************************
+
+*************************************************************
+Generating : Bottom Layer
+      File : ActuatedFin_v1_Copper_Signal_Bot.gbr
+
+    Adding Layer      : Bottom Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D10
+    D11
+    D13
+    D14
+    D15
+    D16
+*************************************************************
+
+*************************************************************
+Generating : Profile
+      File : ActuatedFin_v1_Profile.gbr
+
+
+Used DCodes :
+    D17
+*************************************************************
+

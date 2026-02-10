@@ -1,0 +1,34 @@
+# BLIMP Platform - Python Package Dependencies
+# Install with: pip install -r requirements.txt
+
+# ROS 2 Core
+rclpy==2024.01.00
+rclcpp==2024.01.00
+
+# Hardware Drivers
+pigpio==1.78                        # GPIO PWM control for ESC and servo motors
+adafruit-bno055==1.1.0              # BNO055 9-DOF IMU sensor driver
+adafruit-bmp3xx==1.1.2              # BMP390 barometric pressure sensor driver
+
+# Computer Vision
+opencv-python==4.8.0.76             # OpenCV for image processing
+ultralytics==8.0.195                # YOLOv5 object detection framework
+Pillow==10.0.0                      # Image processing library
+
+# Scientific Computing
+numpy==1.24.3                       # Numerical computing and array operations
+scipy==1.11.1                       # Scientific computing utilities
+
+# Data Analysis & Plotting
+matplotlib==3.7.2                   # Plotting and visualization
+pandas==2.0.3                       # Data manipulation and analysis
+
+# Utilities
+pyyaml==6.0                         # YAML configuration file support
+rosdep==0.22.0                      # ROS dependency manager
+
+# Development & Testing (optional)
+pytest==7.4.0                       # Unit testing framework
+black==23.7.0                       # Code formatter
+pylint==2.17.5                      # Code linter
+flake8==6.0.0                       # Code style checker

@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 793.7007874015749 1122.5196850393702"
+   width="793.7007874015749"
+   height="1122.5196850393702"
+   version="1.1"
+   id="svg25"
+   sodipodi:docname="FinnToBlimp.svg"
+   inkscape:version="1.3 (0e150ed6c4, 2023-07-21)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview25"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="0.65834037"
+     inkscape:cx="396.45146"
+     inkscape:cy="925.81289"
+     inkscape:window-width="1920"
+     inkscape:window-height="974"
+     inkscape:window-x="-11"
+     inkscape:window-y="-11"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g25" />
+  <desc
+     id="desc1">FinnToBlimp.DXF - scale = 25.400000, origin = (0.000000, 0.000000), method = file</desc>
+  <defs
+     id="defs4">
+    <marker
+       id="DistanceX"
+       orient="auto"
+       refX="0.0"
+       refY="0.0"
+       style="overflow:visible">
+      <path
+         d="M 3,-3 L -3,3 M 0,-5 L  0,5"
+         style="stroke:#000000; stroke-width:0.5"
+         id="path1" />
+    </marker>
+    <pattern
+       id="Hatch"
+       patternUnits="userSpaceOnUse"
+       width="8"
+       height="8"
+       x="0"
+       y="0">
+      <path
+         d="M8 4 l-4,4"
+         stroke="#000000"
+         stroke-width="0.25"
+         linecap="square"
+         id="path2" />
+      <path
+         d="M6 2 l-4,4"
+         stroke="#000000"
+         stroke-width="0.25"
+         linecap="square"
+         id="path3" />
+      <path
+         d="M4 0 l-4,4"
+         stroke="#000000"
+         stroke-width="0.25"
+         linecap="square"
+         id="path4" />
+    </pattern>
+    <symbol
+       id="*Model_Space" />
+    <symbol
+       id="*Paper_Space" />
+    <symbol
+       id="*Paper_Space0" />
+  </defs>
+  <g
+     inkscape:groupmode="layer"
+     inkscape:label="0"
+     id="g25">
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.90709;stroke-linecap:round;stroke-dasharray:none"
+       d="M -288 1131.52 L -288 1113.52"
+       id="path5" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.90709;stroke-linecap:round;stroke-dasharray:none"
+       d="M -384 1131.52 L -288 1131.52"
+       id="path6" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.90709;stroke-linecap:round;stroke-dasharray:none"
+       d="M -384 1194.52 L -384 1131.52"
+       id="path7" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.90709;stroke-linecap:round;stroke-dasharray:none"
+       d="M -384 1194.52 L 384 1194.52"
+       id="path8" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.90709;stroke-linecap:round;stroke-dasharray:none"
+       d="M 384 1194.52 L 384 1050.52"
+       id="path9" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.90709;stroke-linecap:round;stroke-dasharray:none"
+       d="M -384 1050.52 L 384 1050.52"
+       id="path10" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.90709;stroke-linecap:round;stroke-dasharray:none"
+       d="M -384 1113.52 L -384 1050.52"
+       id="path11" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.90709;stroke-linecap:round;stroke-dasharray:none"
+       d="M -384 1113.52 L -288 1113.52"
+       id="path12" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.90709;stroke-linecap:round;stroke-dasharray:none"
+       d="M -192 1131.52 L -192 1113.52"
+       id="path13" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.90709;stroke-linecap:round;stroke-dasharray:none"
+       d="M -192 1113.52 L -96 1113.52"
+       id="path14" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.90709;stroke-linecap:round;stroke-dasharray:none"
+       d="M -96 1131.52 L -96 1113.52"
+       id="path15" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.90709;stroke-linecap:round;stroke-dasharray:none"
+       d="M -192 1131.52 L -96 1131.52"
+       id="path16" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.90709;stroke-linecap:round;stroke-dasharray:none"
+       d="M 0 1131.52 L 0 1113.52"
+       id="path17" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.90709;stroke-linecap:round;stroke-dasharray:none"
+       d="M 0 1113.52 L 96 1113.52"
+       id="path18" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.90709;stroke-linecap:round;stroke-dasharray:none"
+       d="M 96 1131.52 L 96 1113.52"
+       id="path19" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.90709;stroke-linecap:round;stroke-dasharray:none"
+       d="M 0 1131.52 L 96 1131.52"
+       id="path20" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.90709;stroke-linecap:round;stroke-dasharray:none"
+       d="M 192 1131.52 L 192 1113.52"
+       id="path21" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.90709;stroke-linecap:round;stroke-dasharray:none"
+       d="M 192 1113.52 L 288 1113.52"
+       id="path22" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.90709;stroke-linecap:round;stroke-dasharray:none"
+       d="M 288 1131.52 L 288 1113.52"
+       id="path23" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.90709;stroke-linecap:round;stroke-dasharray:none"
+       d="M 192 1131.52 L 288 1131.52"
+       id="path24" />
+    <text
+       x="-384.000000"
+       y="1198.373164"
+       style="font-size:18.269px;fill:#000000;font-family:Arial;text-anchor:start;stroke-width:0.01;stroke-dasharray:none"
+       id="text24"><tspan
+         sodipodi:role="line"
+         dx="0.000000"
+         dy="18.268800"
+         id="tspan24">SOLIDWORKS Educational Product.</tspan></text>
+    <text
+       x="-384.000000"
+       y="1225.776364"
+       style="font-size:18.269px;fill:#000000;font-family:Arial;text-anchor:start;stroke-width:0.01;stroke-dasharray:none"
+       id="text25"><tspan
+         sodipodi:role="line"
+         dx="0.000000"
+         dy="18.268800"
+         id="tspan25">For Instructional Use Only.</tspan></text>
+  </g>
+</svg>

@@ -1,0 +1,10 @@
+Added Pin To Net: NetName=NetAdafruit GPIO_2 Pin=Down CS-2
+Added Pin To Net: NetName=NetAdafruit GPIO_2 Pin=Left CS-2
+Added Pin To Net: NetName=NetAdafruit GPIO_2 Pin=Right CS-2
+Added Pin To Net: NetName=NetAdafruit GPIO_2 Pin=Up CS-2
+Added Pin To Net: NetName=NetAdafruit GPIO_6 Pin=Adafruit GPIO-6
+Added Pin To Net: NetName=NetAdafruit GPIO_6 Pin=Down CS-1
+Added Pin To Net: NetName=NetAdafruit GPIO_6 Pin=Left CS-1
+Added Pin To Net: NetName=NetAdafruit GPIO_6 Pin=Right CS-1
+Added Pin To Net: NetName=NetAdafruit GPIO_6 Pin=Up CS-1
+Added Net: Name=NetAdafruit GPIO_6

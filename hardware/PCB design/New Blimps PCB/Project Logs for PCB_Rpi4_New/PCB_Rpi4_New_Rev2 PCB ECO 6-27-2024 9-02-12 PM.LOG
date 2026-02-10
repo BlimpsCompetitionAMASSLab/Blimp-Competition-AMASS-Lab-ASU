@@ -1,0 +1,3 @@
+Change Component Designator: OldDesignator=Barometer NewDesignator=P?
+Added Pin To Net: NetName=NetAdafruit GPIO_6 Pin=R1-1
+Added Pin To Net: NetName=NetAdafruit GPIO_6 Pin=Sonar-4
