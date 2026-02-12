@@ -35,7 +35,7 @@ def generate_launch_description():
 			executable='baro_cntrl',
 			parameters = [{
 				"kpb": 150.0,
-				"height": 1.4,
+				"height": 6.5,
 			}]
 		),
         # Launching barometer

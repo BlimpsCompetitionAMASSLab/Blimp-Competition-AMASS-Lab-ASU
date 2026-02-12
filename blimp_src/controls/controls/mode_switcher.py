@@ -10,7 +10,7 @@ class BalloonPI(Node):
 		# program will always start with manual mode being true
 		self.Manual_mode = True
 		# pins for the esc and other initialization stuff
-		self.manual_pins = [5,6,13]
+		self.manual_pins = [5,6,26]
 		self.manual_L = 0
 		self.manual_R = 0
 		#self.manual_U = 0

@@ -100,9 +100,9 @@ class NetServo(Node):
 		msg.flag = self.net  # Set the 'flag' field of the Bool message
 		self.publisher.publish(msg)
 		if self.net is False:
-			self.pi.set_servo_pulsewidth(self.pin_net, 500)
+			self.pi.set_servo_pulsewidth(self.pin_net, 1150)
 		elif self.net is True:
-			self.pi.set_servo_pulsewidth(self.pin_net, 2500)
+			self.pi.set_servo_pulsewidth(self.pin_net, 1950)
 
 
 

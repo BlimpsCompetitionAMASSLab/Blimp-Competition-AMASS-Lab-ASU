@@ -34,29 +34,36 @@ class ImuNode(Node): #Creating a Node
 	def publish_imu_data(self):
 		msg = ImuData()
 		
-		accel_x, accel_y, accel_z = self.bno.linear_acceleration
-		
-		gyro_x, gyro_y, gyro_z = self.bno.gyro
+		try:
+			accel_x, accel_y, accel_z = self.bno.linear_acceleration
+			gyro_x, gyro_y, gyro_z = self.bno.gyro
+			q1, q2, q3, q0 = self.bno.quaternion
+			
+			# Check if sensor returned valid data (not None)
+			if None in [accel_x, accel_y, accel_z, gyro_x, gyro_y, gyro_z, q0, q1, q2, q3]:
+				return  # Skip this iteration if any value is None
 
-		q1, q2, q3, q0 = self.bno.quaternion
+			roll, pitch, yaw = self.quat2euler(q0, q1, q2, q3)
+			
+			if (self.c == 1):
+				self.int_roll = roll
+				self.int_pitch = pitch
+				self.int_yaw = yaw
+				self.c += 1
+			roll -= self.int_roll
+			pitch -= self.int_pitch
+			yaw -= self.int_yaw
 
-		roll, pitch, yaw = self.quat2euler(q0, q1, q2, q3)
-		
-		if (self.c == 1):
-			self.int_roll = roll
-			self.int_pitch = pitch
-			self.int_yaw = yaw
-			self.c += 1
-		roll -= self.int_roll
-		pitch -= self.int_pitch
-		yaw -= self.int_yaw
-
-		
-		msg.imu_lin_accel = [accel_x,accel_y,accel_z]
-		msg.imu_gyro = [gyro_x,gyro_y,gyro_z]
-		msg.imu_euler = [roll,pitch,yaw]
-		print(msg.imu_euler)
-		self.imu_data.publish(msg)
+			
+			msg.imu_lin_accel = [accel_x,accel_y,accel_z]
+			msg.imu_gyro = [gyro_x,gyro_y,gyro_z]
+			msg.imu_euler = [roll,pitch,yaw]
+			print(msg.imu_euler)
+			self.imu_data.publish(msg)
+		except (IndexError, OSError, TypeError) as e:
+			# Catch I2C communication errors and library bugs
+			# This prevents the node from crashing
+			pass
 		
 	def quat2euler(self, q0, q1, q2, q3):
 		t0 = 2*(q0*q1 + q2*q3)

@@ -7,10 +7,10 @@ import time									# importing time
 class FixAxesNode(Node):
 	def __init__(self):
 		# defining the pin numbers
-		self.ESC_pin1 = 5
+		self.ESC_pin1 = 13
 		self.ESC_pin2 = 6
-		self.ESC_pin3 = 13
-		#self.ESC_pin4 = 26
+		self.ESC_pin3 = 26
+		#self.ESC_pin4 = 13
 		self.joy_time = 0
 		
 		#Initializing the node and nameing it "joy_to_esc" 

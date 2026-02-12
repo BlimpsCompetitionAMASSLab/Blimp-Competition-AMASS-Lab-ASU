@@ -20,7 +20,7 @@ class EscControl(Node):
 
 		super().__init__("esc_driver") # initialing ros2 node
 		#decalreing a parameter MAC to inport the mac adress
-		self.declare_parameter("MAC","68:6C:E6:73:04:62")
+		self.declare_parameter("MAC","28:EA:0B:F5:F7:9D")
 		#getting the value of that parameter
 		self.MAC = self.get_parameter("MAC").get_parameter_value().string_value
 		#subscribing to the ESC_input topic

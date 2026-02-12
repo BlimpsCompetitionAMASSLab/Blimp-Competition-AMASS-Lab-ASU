@@ -26,30 +26,30 @@ def generate_launch_description():
 			name='cam_node',
         ),
         # Launching Sonar
-		Node(
-			package='sensors',
-			executable='read_sonar',
-			name='sonar',
-        ),
+		# Node(
+		# 	package='sensors',
+		# 	executable='read_sonar',
+		# 	name='sonar',
+        # ),
         # Launching Lidar
-		Node (
-			package='sensors',
-			executable='read_lidar',
-			name='lidar',
-		),
+		# Node (
+		# 	package='sensors',
+		# 	executable='read_lidar',
+		# 	name='lidar',
+		# ),
 		# Launching PID Controler
 		Node(
 			package='sensors_cpp',
 			executable='pi_controller',
 			name='balloon_detect_PI',
 			parameters = [{
-				"iheight": 1.5, # Initial Height
-				"kpx": 0.0, # side mototrs - Proportional
+				"iheight": 2.1, # Initial Height
+				"kpx": 0.0003, # side mototrs - Proportional
 				"kix":  0.0, # side motors - Integral
 				"kpyu": 0.0, # up motor - Proportional
-				"kpyd": 0.0, # down motor - Proportional
+				"kpyd": 0.0015, # down motor - Proportional
 				"kiy":  0.0, # up/down motor - Integral
-				"kpb":  0.0  # barometer - Proportional
+				"kpb":  0.69  # barometer - Proportional
 			}]
         ),
         # Launching Force to ESC node
@@ -75,7 +75,7 @@ def generate_launch_description():
 			name='esc_motor_driver',
 			executable='esc_driver',
 			parameters = [{
-				"MAC":"68:6C:E6:73:04:62"
+				"MAC":"28:EA:0B:F5:F7:9D"
 			}]
 		),
         # Launching servo node for open/close net
@@ -124,11 +124,11 @@ def generate_launch_description():
 			executable='mode_switch',
 			name='mode_switcher',
         ),
-		Node(
-			package ='sensors',
-			executable='LED_modulation',
-			name='LED',
-		)
+		# Node(
+		# 	package ='sensors',
+		# 	executable='LED_modulation',
+		# 	name='LED',
+		# )
 	])
 def main(args=None):
 	generate_launch_description()

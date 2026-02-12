@@ -3,9 +3,9 @@ import time
 import os
 os.system("sudo pigpiod")
 time.sleep(1)
-p1 = 5
+p1 = 13
 p2 = 6
-p3 = 13
+p3 = 5
 p4 = 26
 
 pi = pigpio.pi()
