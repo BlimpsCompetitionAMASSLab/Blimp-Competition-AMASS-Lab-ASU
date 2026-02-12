@@ -1,15 +1,4 @@
 # BLIMP Platform: ROS 2 Source Code Repository
-
-**Project:** AeroFusion - Autonomous BLIMP Navigation and Sensor Integration Platform  
-**Team:** Nihar Masurkar, Prajjwal Dutta, Sai Srinivas Tatwik Meesala  
-**Class:** RAS 598: Experimentation and Deployment of Robotic Systems  
-**Institution:** Arizona State University  
-**Instructor:** Dr. Daniel Aukes  
-
-**Release Tag:** `platform_report_2025_02`  
-**Full Documentation:** See `BLIMP_Handoff_Report_Final.md` in parent directory  
-**GitHub Repository:** https://github.com/BlimpsCompetitionAMASSLab/Blimp-Competition-AMASS-Lab-ASU
-
 ---
 
 ## Table of Contents
