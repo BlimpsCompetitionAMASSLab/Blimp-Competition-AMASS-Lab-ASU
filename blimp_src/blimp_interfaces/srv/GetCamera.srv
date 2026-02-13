@@ -1,0 +1,5 @@
+# not used as of the Spring 2024 GMU Comp, would replace CamMsg
+int64[] camera_mode
+---
+int64[] x_pix
+int64[] y_pix

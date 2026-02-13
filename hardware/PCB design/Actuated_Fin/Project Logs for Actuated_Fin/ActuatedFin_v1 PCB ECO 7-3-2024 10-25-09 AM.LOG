@@ -1,0 +1,6 @@
+Removed Pin From Net: NetName=NetAdafruit GPIO_6 Pin=Adafruit GPIO-6
+Added Pin To Net: NetName=NetAdafruit GPIO_6 Pin=Adafruit GPIO-39
+Added Pin To Net: NetName=NetAdafruit GPIO_6 Pin=Battery-2
+Added Pin To Net: NetName=NetAdafruit GPIO_6 Pin=Forward Motor 1-1
+Added Pin To Net: NetName=NetAdafruit GPIO_6 Pin=Forward Motor 2-2
+Change Net Name : Old Net Name=NetAdafruit GPIO_6 New Net Name=NetAdafruit GPIO_39

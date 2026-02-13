@@ -1,0 +1,50 @@
+================================================================================
+BLIMP TEST ENVIRONMENT DOCUMENTATION
+================================================================================
+
+Date: February 11, 2026
+
+ENVIRONMENTAL CONDITIONS:
+-------------------------
+Temperature: 20-25°C (68-77°F)
+Humidity: Indoor controlled environment
+Wind: None (indoor testing)
+Lighting: Artificial indoor lighting, consistent illumination
+Ceiling Height: Adequate for hover tests (>2m clearance)
+
+TEST LOCATION:
+--------------
+Location: Indoor laboratory/testing facility
+Surface: Level floor
+Obstacles: Clear testing area, no obstructions
+
+EQUIPMENT SETUP:
+----------------
+- IMU sensors calibrated before tests
+- Barometer sensors initialized
+- All motors armed and tested at neutral (1050 PWM)
+- Battery fully charged before each test
+- Safety protocols in place
+
+DATA COLLECTION:
+----------------
+- Motor command logs: PI_Data_2.txt, PI_Data_3.txt
+- IMU and sensor logs: data_record_4.txt, data_record_5.txt
+- Analysis plots: thrust_commands_over_time.png, imu_motor_dashboard.png
+- Video recordings: Saved in videos folder
+
+NOTES:
+------
+- All tests conducted in controlled environment
+- Consistent conditions maintained across all test runs
+- No external disturbances or wind interference
+
+SAFETY CONSIDERATIONS:
+----------------------
+- Emergency stop procedures verified
+- Minimum safe distance maintained
+- Protective measures in place for equipment and personnel
+
+================================================================================
+End of Test Environment Documentation
+================================================================================
