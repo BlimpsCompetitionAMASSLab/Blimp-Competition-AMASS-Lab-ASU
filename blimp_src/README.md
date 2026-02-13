@@ -736,14 +736,6 @@ ros2 run camera_publisher camera_publisher_node
 
 ---
 
-## Contributors
-
-- **Nihar Masurkar** (@NiharMasurkar) - Mechanical engineering, CAD, integration
-- **Prajjwal Dutta** (@DPRIcky) - Software architecture, ROS 2, code review
-- **Sai Srinivas Tatwik Meesala** (@Tatwik19) - Controls, computer vision, sensor fusion
-
----
-
 ## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
