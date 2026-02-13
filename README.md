@@ -73,7 +73,6 @@ Blimp-Competition-AMASS-Lab-ASU/
 - **System Architecture:** [blimp_src/README.md - System Architecture](blimp_src/README.md#system-architecture)
 - **Hardware Pinouts:** [blimp_src/GPIO_PIN_MAP.md](blimp_src/GPIO_PIN_MAP.md)
 - **ROS 2 Nodes & Topics:** [blimp_src/NODES_REFERENCE.md](blimp_src/NODES_REFERENCE.md)
-- **Complete Technical Report:** [BLIMP_Handoff_Report_Final.md](BLIMP_Handoff_Report_Final.md)
 
 ### 🛠️ For Building Hardware
 
@@ -91,8 +90,6 @@ Blimp-Competition-AMASS-Lab-ASU/
 ### 📖 For Reference
 
 - **ROS 2 API:** [blimp_src/NODES_REFERENCE.md](blimp_src/NODES_REFERENCE.md) - All 9 nodes documented
-- **Hardware Specs:** [BLIMP_Handoff_Report_Final.md - Part 1](BLIMP_Handoff_Report_Final.md) - Detailed technical specifications
-- **Team Documentation:** [BLIMP_Handoff_Report_Final.md - Part 2](BLIMP_Handoff_Report_Final.md) - Team roles and procedures
 
 ---
 
