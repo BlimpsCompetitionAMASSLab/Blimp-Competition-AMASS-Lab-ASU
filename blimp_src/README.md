@@ -158,7 +158,7 @@ blimp_src/
 │   │   └── test_data/                          # Test dataset directory
 │   │
 │   └── __pycache__/                            # Python cache (ignore)
-│
+├── bag_files                                   # Contains recorded bag files of topics
 └── test_data/                                   # Test datasets & reference files
     └── (Various test data files)
 ```
@@ -708,7 +708,6 @@ ros2 run camera_publisher camera_publisher_node
 
 ## Additional Resources
 
-- **Full Technical Report:** `BLIMP_Handoff_Report_Final.md`
 - **GitHub Repository:** https://github.com/RAS598-2025-S-Team03/BLIMP-Packages
 - **Project Documentation:** https://ras598-2025-s-team03.github.io/
 - **ROS 2 Documentation:** https://docs.ros.org/en/humble/
