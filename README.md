@@ -12,60 +12,43 @@
 This repository contains everything needed to build, configure, and operate an autonomous BLIMP platform:
 
 ```
-blimp-competition-repo/
-│
-├── blimp_src/                          # ROS 2 Software packages
-│   ├── blimp_interfaces/               # Custom ROS 2 message definitions
-│   ├── sensors/                        # Sensor driver nodes (Python)
-│   ├── sensors_cpp/                    # Vision & control nodes (C++)
-│   ├── controls/                       # Motor and mode control nodes
-│   ├── manual_control/                 # Joystick interface for manual operation
-│   ├── launch/                         # Launch scripts for different scenarios
-│   │
-│   ├── README.md                       # Software overview and quick start
-│   ├── INSTALLATION.md                 # Step-by-step ROS 2 setup (2 hours)
-│   ├── NODES_REFERENCE.md              # Complete API reference for all 9 nodes
-│   ├── GPIO_PIN_MAP.md                 # Hardware pinouts and I2C addresses
-│   ├── TROUBLESHOOTING.md              # Debugging guide for common issues
-│   ├── requirements.txt                # Python package dependencies (pinned versions)
-│   └── LICENSE
-│
-├── hardware/                           # Hardware design and assembly files
-│   ├── cad/                            # 3D CAD models, STEP/STL files
-│   │   ├── structures/                 # Frame and mounting brackets
-│   │   ├── motors/                     # Motor mounts and couplings
-│   │   ├── fasteners/                  # Hardware specifications
-│   │   └── assemblies/                 # Full assembly drawings
-│   │
-│   ├── electronics/                    # Electrical design documentation
-│   │   ├── schematics/                 # Circuit diagrams (PDF)
-│   │   ├── pcb/                        # PCB design files (if custom boards)
-│   │   ├── datasheets/                 # Component specifications
-│   │   ├── power_analysis/             # Power budget and thermal analysis
-│   │   └── assembly_guides/            # Electronics assembly instructions
-│   │
-│   ├── wiring/                         # Complete wiring documentation
-│   │   ├── overview/                   # System-level wiring diagrams
-│   │   ├── subsystems/                 # Motor, sensor, power subsystems
-│   │   ├── assembly_sequence/          # Step-by-step wiring procedures
-│   │   └── testing_procedures/         # Electrical verification methods
-│   │
-│   ├── assembly/                       # Mechanical and integration assembly
-│   │   ├── overview/                   # Complete assembly manual & BOM
-│   │   ├── mechanical/                 # Frame and mechanical assembly
-│   │   ├── electronics_assembly/       # Soldering and circuit assembly
-│   │   ├── integration/                # Subsystem integration
-│   │   ├── software_setup/             # Initial software configuration
-│   │   └── post_assembly/              # Testing and calibration
-│   │
-│   └── README.md                       # Hardware documentation guide
-│
-├── BLIMP_Handoff_Report_Final.md       # Comprehensive technical + team report (50+ pages)
-│   │                                    # Part 1: Technical handoff (T1-T17 requirements)
-│   │                                    # Part 2: Team management (M1-M5 requirements)
-│
-├── README.md                           # This file - repository overview
-└── .gitignore                          # Git ignore patterns
+Blimp-Competition-AMASS-Lab-ASU/
+├── README.md                       # Quick start guide and directory map
+├── docs/                           # Detailed build and software documentation
+│   ├── COLLABORATION_GUIDE.md
+│   ├── GPIO_PIN_MAP.md
+│   ├── hardware.md
+│   ├── INSTALLATION.md
+│   ├── MERGE_GUIDE.md
+│   ├── NODES_REFERENCE.md
+│   ├── REPORT_CHECKLIST.md
+│   ├── SETUP_INTEGRATION_SUMMARY.md
+│   ├── SYSTEM_DESIGN.md
+│   ├── TROUBLESHOOTING.md
+│   └── images/
+├── blimp_src/                      # ROS 2 source packages
+│   ├── README.md
+│   ├── LICENSE
+│   ├── requirements.txt
+│   ├── consolidated_setup.sh
+│   ├── test_data
+│   ├── Barometer_ros2bag/          # Barometer data utilities
+│   ├── blimp_interfaces/           # Custom ROS message definitions
+│   ├── controls/                   # Low-level control drivers
+│   ├── launch/                     # Launch files
+│   ├── manual_control/             # Manual control modes
+│   ├── sensors/                    # Sensor reader nodes (Python)
+│   └── sensors_cpp/                # Sensor nodes (C++)
+├── hardware/                       # Mechanical design and electronics
+│   ├── assembly/                   # Assembly instructions
+│   ├── cad/                        # CAD design files
+│   ├── Datasheets/                 # Component datasheets
+│   ├── electronics/                # Wiring and schematics
+│   ├── PCB design/                 # PCB layouts
+│   ├── ESC programmer/             # ESC configuration tools
+│   └── wiring/                     # Wiring documentation
+├── Instructions/                   # Setup instructions
+└── Images/
 
 ```
 
@@ -146,117 +129,16 @@ BLIMP is an autonomous lighter-than-air vehicle capable of:
 | **Control** | Inverse kinematics, PI control, Kalman filter |
 | **Interfaces** | ROS 2 topics/services, launch files |
 
----
-
-## Key Documents
-
-### Software Documentation
-| Document | Purpose | Time to Read |
-|----------|---------|--------------|
-| [blimp_src/README.md](blimp_src/README.md) | Software overview & quick start | 10 min |
-| [blimp_src/INSTALLATION.md](blimp_src/INSTALLATION.md) | Step-by-step ROS 2 setup | 120 min (with setup) |
-| [blimp_src/NODES_REFERENCE.md](blimp_src/NODES_REFERENCE.md) | Complete node API reference | 30 min |
-| [blimp_src/GPIO_PIN_MAP.md](blimp_src/GPIO_PIN_MAP.md) | Hardware pinouts & addresses | 10 min |
-| [blimp_src/TROUBLESHOOTING.md](blimp_src/TROUBLESHOOTING.md) | Debugging guide (50+ issues) | 5 min per issue |
-
-### Hardware Documentation
-| Document | Purpose | Pages |
-|----------|---------|-------|
-| [hardware/assembly/complete_assembly_manual.pdf](hardware/assembly/) | Full build guide (TBD) | 50+ |
-| [hardware/README.md](hardware/README.md) | Hardware docs guide | 15 |
-| [hardware/cad/](hardware/cad/) | 3D CAD models | — |
-| [hardware/electronics/](hardware/electronics/) | Schematics & PCB files | — |
-| [hardware/wiring/](hardware/wiring/) | Wiring diagrams | — |
-
-### Comprehensive Report
-| Document | Purpose | Pages |
-|----------|---------|-------|
-| [BLIMP_Handoff_Report_Final.md](BLIMP_Handoff_Report_Final.md) | Technical handoff + team management | 50+ |
-
----
-
-## Getting Started (2 Paths)
-
-### Path A: Software-Only Development (2 hours)
-**Goal:** Develop, debug, and test ROS 2 nodes without hardware
-
-```bash
-# 1. Clone this repository
-git clone https://github.com/BlimpsCompetitionAMASSLab/Blimp-Competition-AMASS-Lab-ASU.git
-cd Blimp-Competition-AMASS-Lab-ASU
-
-# 2. Follow software setup
-cd blimp_src
-cat INSTALLATION.md          # Read 2-hour setup guide
-# ... follow installation steps
-
-# 3. Build ROS 2 packages
-colcon build
-source install/setup.bash
-
-# 4. Explore nodes and topics
-ros2 node list
-ros2 topic list
-```
-
-**Documentation:**
-- [blimp_src/INSTALLATION.md](blimp_src/INSTALLATION.md) - Detailed setup
-- [blimp_src/README.md](blimp_src/README.md) - Software overview
-- [blimp_src/NODES_REFERENCE.md](blimp_src/NODES_REFERENCE.md) - Node specifications
-
----
-
-### Path B: Complete Hardware Build (8-15 hours over multiple days)
-**Goal:** Build complete autonomous BLIMP from parts
-
-**Day 1: Mechanical Assembly (4 hours)**
-```bash
-# Start with hardware documentation
-cd hardware
-cat assembly/overview/bill_of_materials_v2.xlsx      # Sourced parts
-cat cad/assemblies/complete_assembly.pdf             # See final product
-cat assembly/mechanical/frame_assembly.pdf           # Build frame
-```
-
-**Day 2: Electronics Integration (3 hours)**
-```bash
-# Wire components
-cat hardware/wiring/overview/complete_wiring_diagram.pdf
-cat hardware/electronics/assembly_guides/
-cat hardware/assembly/electronics_assembly/
-```
-
-**Day 3: Software & Testing (3-5 hours)**
-```bash
-# Install ROS 2 and build software
-cd blimp_src
-# ... follow INSTALLATION.md steps
-
-cat assembly/post_assembly/safety_inspection_checklist.txt
-cat assembly/post_assembly/first_power_on_procedure.txt
-
-# Run tests
-ros2 launch bomber_launch.py
-```
-
-**Documentation:**
-- [hardware/assembly/complete_assembly_manual.pdf](hardware/assembly/) - Full guide
-- [hardware/wiring/](hardware/wiring/) - Wiring diagrams
-- [blimp_src/INSTALLATION.md](blimp_src/INSTALLATION.md) - Software setup
-- [hardware/assembly/post_assembly/safety_inspection_checklist.txt](hardware/assembly/) - Verification
-
----
 
 ## System Capabilities
 
 ✅ **Implemented Features:**
-- Autonomous flight with IMU + barometer fusion
-- Balloon detection and tracking via onboard camera
+= aUTONOMOUS hover control
 - Manual joystick control (4-axis: throttle, pitch, roll, yaw)
 - ROS 2-based modular architecture (9 nodes)
 - Inverse kinematics for 4-motor control
 - PI control for altitude and heading
-- Data logging (IMU, barometer, camera frames)
+- Data logging (IMU, barometer)
 
 📊 **Performance Specs:**
 - **Flight Time:** ~20 minutes (3S LiPo battery, 5A avg draw)
@@ -313,6 +195,56 @@ Hardware design files, electrical schematics, CAD models, and assembly instructi
 
 ---
 
+## Clone Repository and Build Workspace
+
+After setting up ROS 2 and the Xbox controller, you need to clone the BLIMP project repository and build the workspace.
+
+### Step 1: Install Git (if not already installed)
+
+```bash
+sudo apt update
+sudo apt install -y git
+```
+
+```bash
+# Create the workspace directory
+mkdir -p ~/blimp_ws
+
+# Navigate to the workspace
+cd ~/blimp_ws
+
+# Clone the repository
+git clone [https://github.com/BlimpsCompetitionAMASSLab/Blimp-Competition-AMASS-Lab-ASU.git](https://github.com/BlimpsCompetitionAMASSLab/Blimp-Competition-AMASS-Lab-ASU.git) blimp_src
+```
+```bash
+# Navigate to the workspace root
+cd ~/blimp_ws
+
+# Install ROS dependencies using rosdep
+sudo apt install -y python3-rosdep
+sudo rosdep init
+rosdep update
+rosdep install --from-paths blimp_src --ignore-src -r -y
+```
+```bash
+# Build the workspace using colcon
+cd ~/blimp_ws
+colcon build --packages-select blimp_interfaces
+source ~/blimp_ws/install/setup.bash
+colcon build
+
+# Source the workspace
+source ~/blimp_ws/install/setup.bash
+```
+```bash
+echo "source ~/blimp_ws/install/setup.bash" >> ~/.bashrc
+source ~/.bashrc
+```
+```bash
+# Check if packages are available
+ros2 pkg list
+```
+
 ## Common Tasks
 
 ### Build and Run Software
@@ -325,12 +257,6 @@ ros2 node list                  # Verify all nodes running
 ros2 topic list                 # See all published topics
 ```
 
-### Access Hardware Pinouts
-```bash
-cd blimp_src
-cat GPIO_PIN_MAP.md             # I2C addresses, GPIO pins, power budget
-```
-
 ### Debug a Specific Node
 ```bash
 ros2 topic echo /imu_data       # Monitor IMU output
@@ -338,17 +264,6 @@ ros2 topic hz /imu_data         # Check publishing frequency
 ros2 node info /read_imu        # Get node detailed info
 ```
 
-### Build Autonomous BLIMP
-```bash
-cd hardware
-cat assembly/overview/complete_assembly_manual.pdf
-cat assembly/overview/bill_of_materials_v2.xlsx
-# ... source parts from attached suppliers
-# ... follow assembly guide
-
-cd ../blimp_src
-# ... setup software
-```
 
 ---
 
@@ -385,7 +300,7 @@ To contribute improvements:
 **Documentation Updates:**
 - Hardware changes: Update [hardware/README.md](hardware/README.md) and [blimp_src/GPIO_PIN_MAP.md](blimp_src/GPIO_PIN_MAP.md)
 - Software changes: Update [blimp_src/README.md](blimp_src/README.md) and [blimp_src/NODES_REFERENCE.md](blimp_src/NODES_REFERENCE.md)
-- New procedures: Add to [blimp_src/TROUBLESHOOTING.md](blimp_src/TROUBLESHOOTING.md) or [hardware/assembly/](hardware/assembly/)
+- New procedures: Add to [blimp_src/TROUBLESHOOTING.md](blimp_src/TROUBLESHOOTING.md)
 
 ---
 
