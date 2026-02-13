@@ -14,6 +14,7 @@ This repository contains everything needed to build, configure, and operate an a
 ```
 Blimp-Competition-AMASS-Lab-ASU/
 ├── README.md                       # Quick start guide and directory map
+├── Blimp_Project_Weekly_Report.pdf # Project weekly progress report
 ├── test_environment.txt            # Test environment documentation
 ├── docs/                           # Detailed build and software documentation
 │   ├── BLIMP_Handoff_Report_Final.md
@@ -102,6 +103,7 @@ Blimp-Competition-AMASS-Lab-ASU/
 ### 📖 For Reference
 
 - **ROS 2 API:** [blimp_src/NODES_REFERENCE.md](blimp_src/NODES_REFERENCE.md) - All 9 nodes documented
+- **Project Reports:** [Blimp_Project_Weekly_Report.pdf](Blimp_Project_Weekly_Report.pdf) - Weekly progress documentation
 
 ---
 
