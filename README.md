@@ -71,15 +71,10 @@ Blimp-Competition-AMASS-Lab-ASU/
 
 ### 🚀 For First-Time Setup
 
-1. **Software Only:**
+ **Software Only:**
    - Start with: [blimp_src/README.md](blimp_src/README.md)
    - Detailed setup: [blimp_src/INSTALLATION.md](blimp_src/INSTALLATION.md)
    - Estimated time: **2 hours** (ROS 2 + build)
-
-2. **Complete Platform Build:**
-   - Hardware assembly: [hardware/assembly/complete_assembly_manual.pdf](hardware/assembly/)
-   - Wiring: [hardware/wiring/overview/](hardware/wiring/overview/)
-   - Estimated time: **8-15 hours** (spread over several days)
 
 ### 📚 For Understanding the System
 
@@ -93,12 +88,6 @@ Blimp-Competition-AMASS-Lab-ASU/
 2. **Electronics Design:** [hardware/electronics/](hardware/electronics/) - Schematics and PCB layouts
 3. **Wiring Diagrams:** [hardware/wiring/](hardware/wiring/) - Connection documentation
 4. **Assembly Procedures:** [hardware/assembly/](hardware/assembly/) - Step-by-step guides
-
-### 🔧 For Troubleshooting
-
-- **Software Issues:** [blimp_src/TROUBLESHOOTING.md](blimp_src/TROUBLESHOOTING.md)
-- **Hardware Issues:** [hardware/wiring/testing_procedures/](hardware/wiring/testing_procedures/)
-- **Hardware Pinouts:** [blimp_src/GPIO_PIN_MAP.md](blimp_src/GPIO_PIN_MAP.md)
 
 ### 📖 For Reference
 
