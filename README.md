@@ -177,7 +177,6 @@ Complete ROS 2 Humble implementation with modular node architecture. See [blimp_
 - Comprehensive documentation
 
 ### hardware/ - Design & Assembly Files
-Hardware design files, electrical schematics, CAD models, and assembly instructions. See [hardware/README.md](hardware/README.md) for details.
 
 **Contains:**
 - 3D CAD models (STEP/STL)
@@ -185,10 +184,6 @@ Hardware design files, electrical schematics, CAD models, and assembly instructi
 - PCB design files
 - Wiring diagrams
 - Bill of Materials
-- Assembly manuals
-
-### Documentation Root
-- **BLIMP_Handoff_Report_Final.md** - 50+ page comprehensive report covering technical design, team management, and project history
 
 ---
 
